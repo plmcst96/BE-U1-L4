@@ -52,7 +52,7 @@ public class Dipendente {
                 this.stipendio = stipendioBase * 2;
                 System.out.println("Complimenti per la tua promozione a DIRIGENTE!");
             }
-            case DIRIGENTE -> System.err.println("sei già un dirigente!");
+            default ->  System.err.println("sei già un dirigente!");
         }
         return this.livello;
     }
