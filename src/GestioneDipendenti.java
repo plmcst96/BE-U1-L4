@@ -7,7 +7,7 @@ public class GestioneDipendenti {
         Dipendente laura = new Dipendente("A105Y", 2500, 6, Livello.DIRIGENTE, Dipartimento.VENDITE);
         Dipendente matteo = new Dipendente("A1054", 1500, 4, Livello.IMPIEGATO, Dipartimento.AMMINISTRAZIONE);
         Dipendente riccardo = new Dipendente("B208T", 1200, 9, Livello.OPERAIO, Dipartimento.PRODUZIONE);
-        Dipendente chiara = new Dipendente("B208T", 1200, 9, Livello.OPERAIO, Dipartimento.PRODUZIONE);
+        Dipendente chiara = new Dipendente("C678F", 1200, 9, Livello.OPERAIO, Dipartimento.PRODUZIONE);
 
         System.out.println(laura);
         System.out.println(chiara);
