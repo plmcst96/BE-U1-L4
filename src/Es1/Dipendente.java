@@ -1,7 +1,7 @@
 package Es1;
 
 public class Dipendente {
-    public static double stipendioBase = 1000;
+    public static final double stipendioBase = 1000;
     private final String matricola;
     private double stipendio;
     private double importoOrarioStraordinario;
@@ -35,7 +35,7 @@ public class Dipendente {
                 '}';
     }
 
-    public void promuovi(){
+    public Livello promuovi(){
         switch (this.livello){
             case OPERAIO -> {
                 this.livello = Livello.IMPIEGATO;
@@ -54,6 +54,7 @@ public class Dipendente {
             }
             case DIRIGENTE -> System.err.println("sei già un dirigente!");
         }
+        return this.livello;
     }
 
     public static double getStipendioBase(Dipendente dipendente) {
