@@ -2,13 +2,15 @@ package Es1;
 
 public class Dipendente {
     public static double stipendioBase = 1000;
-    private String matricola;
+    private final String matricola;
     private double stipendio;
     private double importoOrarioStraordinario;
     private Livello livello;
     private Dipartimento dipartimento;
 
     public Dipendente(String matricola, Dipartimento dip){
+        this.matricola = matricola;
+        this.dipartimento = dip;
         this.stipendio = stipendioBase;
         this.importoOrarioStraordinario = 30;
         this.livello = Livello.OPERAIO;
