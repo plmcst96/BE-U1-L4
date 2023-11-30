@@ -21,7 +21,7 @@ public class GestioneDipendenti {
         double totSalary = 0.0;
 
             for (int i = 0; i < dipendentes.length; i++) {
-            totSalary += Dipendente.getStipendioBase(dipendentes[i], 5);
+            totSalary += Dipendente.calcolaPaga(dipendentes[i], 5);
         }
         System.out.println(totSalary);
     }

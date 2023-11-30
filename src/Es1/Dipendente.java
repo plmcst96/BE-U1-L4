@@ -57,12 +57,12 @@ public class Dipendente {
         return this.livello;
     }
 
-    public static double getStipendioBase(Dipendente dipendente) {
-        return dipendente.getStipendio();
+    public static double calcolaPaga(Dipendente dipendente) {
+        return dipendente.stipendio;
     }
 
-    public static double getStipendioBase(Dipendente dipendente, int oreStraordinario) {
-        return dipendente.getStipendio() + (dipendente.getImportoOrarioStraordinario() * oreStraordinario);
+    public static double calcolaPaga(Dipendente dipendente, int oreStraordinario) {
+        return dipendente.stipendio + (dipendente.getImportoOrarioStraordinario() * oreStraordinario);
     }
 
     public String getMatricola() {
